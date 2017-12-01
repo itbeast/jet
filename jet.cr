@@ -1,13 +1,17 @@
-require "./src/jet/console"
+require "./lib/version"
+require "./lib/console"
 
 module Jet
-
-  VERSION = "0.0.1"  
 
   def self.run
     Jet::Console.run
   end
-  
+
 end
+
+# ARGV << "-v"
+
+# ARGV << "new"
+# ARGV << "test"
 
 Jet.run
